@@ -1,0 +1,134 @@
+/* Media query for mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Justera header */
+
+  .header-hidden h1 {
+    display: none;
+  }
+
+  #header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  /* Döljer länkarna från början och visar hamburgermenyn */
+  #header-container a {
+    display: none;
+  }
+
+  /* Visa hamburgermenyn */
+  .hamburger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Justerar huvudrubriken */
+  #header-container h1 {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Anpassa navigationslänkar när hamburgermenyn öppnas */
+  #header-container.show a {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    border: none;
+  }
+
+  /* Justering av huvudinnehåll (main) */
+  main {
+    gap: 20px;
+  }
+
+  /* Container-1 styling */
+  #container-1 {
+    width: 80vw;
+  }
+
+  #container-1 img {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* Container-2 i kolumner */
+  #container-2 {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .container-2-box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(3.6px);
+    -webkit-backdrop-filter: blur(3.6px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .container-2-box img {
+    width: 60%;
+    height: auto;
+  }
+
+  .container-2-box-text {
+    width: 100%;
+    height: auto;
+  }
+
+  #container-2-box {
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(3.6px);
+    -webkit-backdrop-filter: blur(3.6px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    display: flex;
+    flex-direction: column;
+  }
+
+  #container-2-box img {
+    width: 60%;
+    height: auto;
+  }
+
+  /* Container-3 priser i kolumner */
+  #container-3-boxes {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .container-3-box {
+    width: 90%;
+    gap: 35px;
+    background: #3b8df1;
+  }
+
+  .container-3-box img {
+    width: 60%;
+    height: auto;
+  }
+
+  /* Anpassa bilderna i helrekonden */
+  #images {
+    display: flex; /* Gör så att bilderna ligger i rad */
+    justify-content: center; /* Centrera bilderna horisontellt */
+    gap: 10px; /* Lägg till mellanrum mellan bilderna */
+    flex-wrap: wrap; /* Gör så att bilderna kan brytas till nästa rad om det behövs */
+  }
+
+  #images img {
+    width: 45%; /* Sätt en maxbredd så att de passar på skärmen */
+    height: auto; /* Bevara bildförhållandet */
+  }
+
+  /* Footer justering */
+  #footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
