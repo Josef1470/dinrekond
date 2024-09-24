@@ -250,10 +250,11 @@ main {
   padding: 7px;
 }
 
-.container-3-box:hover {
-  background: #6eacda;
+@media (min-width: 769px) {
+  .container-3-box:hover {
+    background: #6eacda;
+  }
 }
-
 .container-3-box p {
   line-height: 2;
 }
@@ -279,11 +280,12 @@ main {
   border: none;
 }
 
-.container-3-box button:hover {
-  background-color: black;
-  cursor: pointer;
+@media (min-width: 769px) {
+  .container-3-box button:hover {
+    background-color: black;
+    cursor: pointer;
+  }
 }
-
 .container-3-box .extra-content {
   height: 0; /* Start collapsed */
   overflow: hidden; /* Hide overflow when collapsed */
