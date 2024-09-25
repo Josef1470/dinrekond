@@ -141,20 +141,30 @@ main {
   transition: 0.5s;
 }
 
-.container-2-box:hover {
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(3.6px);
-  -webkit-backdrop-filter: blur(3.6px);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-}
+@media (min-width: 769px) {
+  .container-2-box:hover {
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(3.6px);
+    -webkit-backdrop-filter: blur(3.6px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
 
-.container-2-box:hover .container-2-box-text {
-  gap: 40px;
-}
+  .container-2-box:hover .container-2-box-text {
+    gap: 40px;
+  }
 
-#container-2-box:hover .container-2-box-text {
-  gap: 40px;
+  #container-2-box:hover .container-2-box-text {
+    gap: 40px;
+  }
+
+  #container-2-box:hover {
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(3.6px);
+    -webkit-backdrop-filter: blur(3.6px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
 }
 
 #container-2-box {
@@ -168,14 +178,6 @@ main {
 
   padding: 7px;
   transition: 0.5s;
-}
-
-#container-2-box:hover {
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(3.6px);
-  -webkit-backdrop-filter: blur(3.6px);
-  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 #container-2-box img {
