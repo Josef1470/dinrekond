@@ -63,7 +63,6 @@
   #container-2 {
     flex-direction: column;
     gap: 30px;
-    width: 100%;
   }
 
   .container-2-box {
