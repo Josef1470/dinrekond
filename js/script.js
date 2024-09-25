@@ -48,21 +48,7 @@ buttons.forEach((button) => {
   });
 });
 
-// const buttons2 = document.getElementById("button1");
-
-// let isExpanded2 = false; // Moved outside the event listener to maintain state
-
-// buttons2.addEventListener("click", () => {
-//   const container2 = document.getElementById("container-3-box");
-//   const content2 = container2.querySelector("#extra-content"); // Select class with "."
-
-//   if (!isExpanded2) {
-//     content2.style.height = content2.scrollHeight + "px"; // Expand to full content height
-//     buttons2.innerHTML = "&uarr;"; // Change to up arrow
-//   } else {
-//     content2.style.height = "0"; // Collapse
-//     buttons2.innerHTML = "&darr;"; // Change to down arrow
-//   }
-
-//   isExpanded2 = !isExpanded2; // Toggle the expansion state
-// });
+window.onload = function () {
+  window.scrollTo(0, 1); // Scroll the page by 1px to trigger a re-layout
+  window.scrollTo(0, 0); // Immediately scroll back to the top
+};
