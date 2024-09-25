@@ -119,6 +119,17 @@
     height: auto;
   }
 
+  #container-3-boxes-tvatt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #color {
+    background-color: #6eabda70;
+  }
+
   /* Anpassa bilderna i helrekonden */
   #images {
     display: flex; /* Gör så att bilderna ligger i rad */

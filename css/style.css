@@ -219,12 +219,11 @@ main {
   align-items: center;
   width: 100%;
   height: auto;
-  gap: 50px;
 
   background-color: white;
 }
 
-#container-3-boxes {
+#container-3-boxes-tvatt {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -250,6 +249,13 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.06);
 
   padding: 7px;
+}
+
+#dackskift {
+  text-align: center;
+  width: 100%;
+  background-color: #03346e;
+  color: white;
 }
 
 @media (min-width: 769px) {
@@ -310,6 +316,19 @@ main {
   height: 150px;
   border-radius: 25px;
   width: 100%;
+}
+
+#container-3-boxes-dack {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  background-image: url("../img/dackskift.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* Footer styling */
