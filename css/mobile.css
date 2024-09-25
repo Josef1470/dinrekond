@@ -1,5 +1,9 @@
 /* Media query for mobile (max-width: 768px) */
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   /* Justera header */
 
   .header-hidden h1 {
