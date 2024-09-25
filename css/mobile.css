@@ -2,6 +2,7 @@
 @media (max-width: 768px) {
   body {
     overflow-x: hidden;
+    max-width: 100%;
   }
 
   /* Justera header */
@@ -62,6 +63,7 @@
   #container-2 {
     flex-direction: column;
     gap: 30px;
+    width: 100%;
   }
 
   .container-2-box {
