@@ -46,21 +46,21 @@ header {
   height: auto;
 
   padding: 15px;
-  background-color: #6eacda;
+  background-color: #03346e;
+  color: white;
 }
 
 #header-container a {
   text-decoration: none;
-  color: #181c14;
+  color: white;
   transition: 0.5s;
-  border: 2px solid #6eacda;
+  border: 2px solid #03346e;
   padding: 8px;
   border-radius: 25px;
 }
 
 #header-container a:hover {
   background-color: #181c14;
-  color: #6eacda;
 }
 
 /* Main styling */
@@ -74,25 +74,50 @@ main {
 /* container-1 styling */
 
 #container-1-transparent {
+  position: relative; /* Make this container relative */
   display: flex;
   justify-content: center;
   width: 100%;
-
+  padding: 20px;
   background-image: url("../img/exteriorTvatt.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity here */
+  z-index: 1;
+}
+
 #container-1 {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
-
   margin-bottom: 10px;
   gap: 20px;
-  width: 30vw;
+  width: 50vw;
   height: auto;
+}
+
+.transparent {
+  color: white;
+  padding: 7px;
+  z-index: 3;
+
+  width: 100%;
+}
+
+.transparent p {
+  line-height: 1.5;
+  font-size: x-large;
 }
 
 #container-1 img {
@@ -100,22 +125,6 @@ main {
   width: 250px;
   border: 2px solid black;
   border-radius: 50%;
-}
-
-.transparent {
-  color: white;
-  background: #29547562;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(3.6px);
-  -webkit-backdrop-filter: blur(3.6px);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-
-  padding: 7px;
-}
-
-.transparent p {
-  line-height: 1.5;
 }
 
 /* Container-2 styling */
@@ -154,11 +163,11 @@ main {
     gap: 40px;
   }
 
-  #container-2-box:hover .container-2-box-text {
+  .container-2-box-right:hover .container-2-box-text {
     gap: 40px;
   }
 
-  #container-2-box:hover {
+  .container-2-box-right:hover {
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(3.6px);
@@ -167,7 +176,7 @@ main {
   }
 }
 
-#container-2-box {
+.container-2-box-right {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -180,7 +189,7 @@ main {
   transition: 0.5s;
 }
 
-#container-2-box img {
+.container-2-box-right img {
   width: 50%;
   height: 600px;
   border-radius: 25px;
@@ -238,7 +247,6 @@ main {
   align-items: center;
   width: 22vw;
   height: auto;
-
   gap: 10px;
 
   background: #6eabda70;
@@ -248,11 +256,12 @@ main {
   -webkit-backdrop-filter: blur(3.6px);
   border: 1px solid rgba(255, 255, 255, 0.06);
 
-  padding: 7px;
+  padding: 20px;
 }
 
 #dackskift {
   text-align: center;
+  padding: 20px;
   width: 100%;
   background-color: #03346e;
   color: white;
@@ -280,12 +289,13 @@ main {
 }
 
 .container-3-box button {
-  width: 30%;
-  height: 5vh;
+  width: 7vh;
+  height: 7vh;
 
   background-color: #03346e;
   color: white;
   border: none;
+  border-radius: 100%;
 }
 
 @media (min-width: 769px) {
@@ -301,7 +311,7 @@ main {
 }
 
 .extra-content {
-  margin-top: 10pxx;
+  margin-top: 10px;
   line-height: 1.5;
 }
 
@@ -324,7 +334,7 @@ main {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  gap: 10px;
+  gap: 40px;
   background-image: url("../img/dackskift.webp");
   background-repeat: no-repeat;
   background-position: center;
@@ -337,7 +347,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #6eacda;
+  background-color: #03346e;
   padding: 20px 0;
 }
 
@@ -347,7 +357,7 @@ footer {
   align-items: center;
   flex-direction: row;
   width: 100%;
-  color: #181c14;
+  color: white;
 }
 
 .footer-section {
@@ -363,7 +373,7 @@ footer {
 }
 
 .footer-section a {
-  color: #181c14;
+  color: white;
   text-decoration: none;
   transition: color 0.3s ease;
 }

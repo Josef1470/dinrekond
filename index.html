@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DinRekond offers professional car detailing services at your location. Experience quality and convenience.">
+    <meta name="keywords" content="bilrekonditionering, bilvård, professionell bilrekond, mobil bilvård, tvätt och rekond, miljövänliga bilprodukter, däckskifte, inre och yttre bilvård, biltvätt, bilpleje" />
+
+
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
     <link
@@ -50,10 +54,11 @@
             </p>
           </div>
         </div>
+        <div class="overlay"></div>
       </div>
 
       <div id="container-2">
-        <div class="container-2-box" data-aos="fade-left">
+        <div class="container-2-box" data-aos="fade-right">
           <img src="./img/schampoo.png" alt="produkt" />
 
           <div class="container-2-box-text">
@@ -70,7 +75,7 @@
           </div>
         </div>
 
-        <div id="container-2-box" data-aos="fade-left">
+        <div class="container-2-box-right" data-aos="fade-left">
           <img src="./img/arbetsplats.jpeg" alt="arbetsplats" />
 
           <div class="container-2-box-text">
@@ -104,14 +109,26 @@
             </p>
           </div>
         </div>
+
+        <div class="container-2-box-right" data-aos="fade-left">
+          <img src="./img/dinrekondLoga.png" alt="loga" />
+
+          <div class="container-2-box-text">
+            <h2>Varför DinRekond?</h2>
+            <p>
+              När du väljer DinRekond får du inte bara ett prisvärt och kostnadseffektivt alternativ för rekonditionering av ditt fordon, utan även en tjänst präglad av vår passion för bilar och kundnöjdhet. Vi strävar efter att erbjuda högkvalitativa tjänster till konkurrenskraftiga priser, vilket gör att du får mycket valuta för pengarna. Vår mobila lösning innebär att vi kommer till dig, vilket ger dig bekvämlighet och tidsbesparing. Vi är dedikerade till att återställa och bevara skönheten hos ditt fordon, och vi är stolta över att använda miljövänliga produkter som skyddar både din bil och planeten. Välj DinRekond för en pålitlig och professionell upplevelse!
+            </p>
+          </div>
+        </div>
+        
       </div>
 
       <div id="container-3">
         <h1>Våra priser</h1>
 
         <div id="container-3-boxes-tvatt">
-          <div class="container-3-box" id="container-3-box" data-aos="fade-up">
-            <h2>Exteriörtvätt – 499 kr</h2>
+          <div class="container-3-box" id="container-3-box1" data-aos="fade-up">
+            <h2>Exteriörtvätt – fr. 499 kr</h2>
 
             <img src="./img/exteriorTvatt.webp" alt="tvatt" />
 
@@ -133,11 +150,11 @@
               </p>
             </div>
 
-            <button id="button1">&darr;</button>
+            <button id="button1" class="container-3-button" onclick="changeHeight('container-3-box1')">&darr;</button>
           </div>
 
-          <div class="container-3-box" data-aos="fade-up">
-            <h2>Interiörtvätt – 499 kr</h2>
+          <div class="container-3-box" id="container-3-box2" data-aos="fade-up">
+            <h2>Interiörtvätt – fr. 499 kr</h2>
 
             <img src="./img/interiorTvatt.jpg" alt="tvatt" />
 
@@ -159,11 +176,11 @@
               </p>
             </div>
 
-            <button id="button2">&darr;</button>
+            <button id="button2" class="container-3-button" onclick="changeHeight('container-3-box2')">&darr;</button>
           </div>
 
-          <div class="container-3-box" data-aos="fade-up">
-            <h2>Helrekond – 799 kr</h2>
+          <div class="container-3-box" id="container-3-box3" data-aos="fade-up">
+            <h2>Helrekond – fr. 799 kr</h2>
 
             <div id="images">
               <img src="./img/exteriorTvatt.webp" alt="exterior" />
@@ -173,29 +190,27 @@
             <p>
               För endast 799 kr erbjuder vi en komplett helrekond som inkluderar
               både invändig och utvändig tvätt. Du får en noggrann exteriörtvätt
-              med avfettning samt däck- och fälgtvätt, och vi detaljstädar även
-              interiören med dammsugning, avtorkning och fönsterrengöring. Genom
-              att välja helrekonden får du ett bättre pris än att bara enbart
-              boka exteriör eller interiör tvätt.
+              samt interiörtvätt. Genom att välja helrekonden får du ett bättre 
+              pris än att bara enbart boka exteriör eller interiör tvätt.
             </p>
 
             <div class="extra-content">
               <p>&bull; Allt som ingår i exteriör & interiör tvätt<br /></p>
             </div>
 
-            <button id="button3">&darr;</button>
+            <button id="button3" class="container-3-button" onclick="changeHeight('container-3-box3')">&darr;</button>
           </div>
         </div>
 
 
-        <h1 id="dackskift">Däckskift</h1>
+        <h1 id="dackskift">Däckskifte</h1>
 
 
         <div id="container-3-boxes-dack">
           <div></div>
 
           <div class="container-3-box" id="color" data-aos="fade-up">
-            <h2>Däckskift - 499 kr</h2>
+            <h2>Däckskifte - 499 kr</h2>
 
             <img src="./img/dackskift.webp" id="dack" alt="tvatt" />
 

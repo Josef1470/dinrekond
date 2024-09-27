@@ -86,7 +86,7 @@
     height: auto;
   }
 
-  #container-2-box {
+  .container-2-box-right {
     border-radius: 16px;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(3.6px);
@@ -96,7 +96,7 @@
     flex-direction: column;
   }
 
-  #container-2-box img {
+  .container-2-box-right img {
     width: 60%;
     height: auto;
   }
