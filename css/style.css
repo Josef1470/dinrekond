@@ -3,6 +3,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -15,6 +16,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   overflow-x: hidden;
+  max-width: 100%;
 
   background-color: #021526;
 }
@@ -103,7 +105,7 @@ main {
   align-items: center;
   margin-bottom: 10px;
   gap: 20px;
-  width: 50vw;
+  width: 40%;
   height: auto;
 }
 
