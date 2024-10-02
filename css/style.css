@@ -82,6 +82,7 @@ main {
   width: 100%;
   padding: 20px;
   background-image: url("../img/exteriorTvatt.webp");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -338,6 +339,7 @@ main {
   width: 100%;
   gap: 40px;
   background-image: url("../img/dackskift.webp");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
