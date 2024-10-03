@@ -29,26 +29,39 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Select all buttons
 const buttons = document.querySelectorAll("button[id^='button']");
 buttons.forEach((button) => {
-  let isExpanded = false;
+  let isExpanded = false; // Track whether the current box is expanded
+
   button.addEventListener("click", () => {
-    // Find the parent container and content area
+    // Collapse any currently expanded content before expanding the clicked one
+    buttons.forEach((otherButton) => {
+      const otherContainer = otherButton.closest(".container-3-box");
+      const otherContent = otherContainer.querySelector(".extra-content");
+
+      // If another box is expanded and it's not the current one, collapse it
+      if (
+        otherButton !== button &&
+        otherContent.classList.contains("expanded")
+      ) {
+        otherContent.classList.remove("expanded");
+        otherButton.innerHTML = "&darr;"; // Set button to down arrow for collapsed box
+      }
+    });
+
+    // Find the parent container and content area of the clicked button
     const container = button.closest(".container-3-box");
     const content = container.querySelector(".extra-content");
+
+    // Toggle the current box between expanded and collapsed states
     if (!isExpanded) {
-      content.style.height = content.scrollHeight + "px"; // This should allow for full height
+      content.classList.add("expanded");
       button.innerHTML = "&uarr;"; // Change button to up arrow
     } else {
-      content.style.height = "0"; // Collapse back to zero height
+      content.classList.remove("expanded");
       button.innerHTML = "&darr;"; // Change button to down arrow
     }
-    isExpanded = !isExpanded; // Toggle state
+
+    isExpanded = !isExpanded; // Toggle the state of the current box
   });
 });
-
-window.onload = function () {
-  window.scrollTo(0, 1); // Scroll the page by 1px to trigger a re-layout
-  window.scrollTo(0, 0); // Immediately scroll back to the top
-};
