@@ -8,7 +8,6 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 /* Website structure */
@@ -16,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow-x: hidden;
+
   max-width: 100%;
 
   background-color: #021526;
@@ -72,6 +71,8 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 50px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 /* container-1 styling */
@@ -87,6 +88,8 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .overlay {
@@ -226,6 +229,7 @@ main {
 }
 
 /* Container 3 styling */
+/* Container 3 styling */
 #container-3 {
   display: flex;
   flex-direction: column;
@@ -233,7 +237,30 @@ main {
   width: 100%;
   height: auto;
 
-  background-color: white;
+  /* Gradient animation */
+  background: linear-gradient(
+    135deg,
+    #2124c0,
+    rgb(6, 99, 109),
+    #2023bf,
+    rgb(6, 99, 109)
+  );
+  background-size: 400% 400%; /* Increase size for smooth transition */
+  animation: gradientAnimation 15s ease infinite; /* Animation details */
+
+  gap: 2rem;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 #container-3-boxes-tvatt {
@@ -249,13 +276,14 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 22vw;
+  width: 27%;
+  height: 90vh;
   gap: 10px;
 
   max-height: auto;
   transition: max-height 0.5s ease; /* Smooth transition for height */
 
-  background: #6eabda70;
+  background: #999;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(3.6px);
@@ -269,18 +297,24 @@ main {
   text-align: center;
   padding: 20px;
   width: 100%;
-  background-color: #03346e;
+  background-color: #021526;
   color: white;
 }
 
 @media (min-width: 769px) {
   .container-3-box:hover {
-    background: #6eacda;
+    background: #2579e1;
+    color: white;
+  }
+
+  .container-3-box:hover button {
+    background-color: #999;
   }
 }
 
 .container-3-box p {
   line-height: 2;
+  font-size: 1.2rem;
 }
 
 .container-3-box img {
@@ -409,6 +443,18 @@ hr {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+#container-3-boxes-dack .container-3-box {
+  background-color: #062dad;
+  color: white;
+}
+
+#container-3-boxes-dack .container-3-box:hover {
+  box-shadow: 0 4px 30px rgb(255, 255, 255);
+  backdrop-filter: blur(3.6px);
+  -webkit-backdrop-filter: blur(3.6px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 /* Footer styling */

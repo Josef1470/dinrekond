@@ -110,6 +110,7 @@
 
   .container-3-box {
     width: 90%;
+    height: auto;
     gap: 35px;
     background: #3b8df1;
   }
