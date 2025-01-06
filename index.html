@@ -31,36 +31,49 @@
       <div id="header-container">
         <a href="#">Hem</a>
         <a href="#container-2">Om DinRekond</a>
-        <h1>DinRekond</h1>
+        <img src="./img/dinrekondLoga.png" alt="Loga" />
         <div id="hamburger-menu" class="hamburger-menu">
           <button class="menu-toggle" aria-label="Open menu">
             <i class="fas fa-bars fa-2x"></i>
           </button>
         </div>
-        <a href="#container-3">Priser</a>
+        <a href="#priser">Priser</a>
         <a href="#footer-container">Kontakt uppgifter</a>
       </div>
     </header>
 
     <main>
-      <div id="container-1-transparent">
-        <div id="container-1">
-          <img src="./img/dinrekondLoga.png" alt="Loga" />
-          <div class="transparent">
-            <p>
-              Välkommen till DinRekond! Vi är ett lokalt, personligt företag som
-              erbjuder professionell rekond till bilar och andra fordon direkt
-              på plats hos dig. Med ett öga för detaljer och en passion för
-              perfektion ser vi till att ditt fordon ser ut som nytt igen,
-              oavsett om det gäller interiör, exteriör eller helrekond. Din tid
-              är viktig, därför kommer vi till dig för att göra arbetet så
-              smidigt och bekvämt som möjligt. Låt oss ta hand om ditt fordon –
-              vi levererar kvalitet och glans varje gång!
-            </p>
-          </div>
-        </div>
+
+      <div id="container-1">
+        <video autoplay muted loop class="myVideo">
+          <source src="./img/main.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      
         <div class="overlay"></div>
+      
+
+
+        
+        <div id="text">
+          <h1>DinRekond</h1>
+
+          <p>
+            Välkommen till DinRekond! Ett personligt företag som
+            erbjuder professionell rekond till bilar och andra fordon direkt
+            på plats hos dig. Med passion för
+            perfektion ser vi till att ditt fordon ser ut som nytt igen,
+            oavsett om det gäller interiör eller exteriör. Din tid
+            är viktig, därför kommer vi till dig för att göra arbetet så
+            smidigt och bekvämt som möjligt.
+            Vi levererar kvalitet och glans varje gång!
+          </p>
+
+          <a href="#footer-container">Boka nu</a>
+        </div>
       </div>
+      
+
 
       <div id="container-2">
         <div class="container-2-box" data-aos="fade-right">
@@ -138,7 +151,7 @@
       </div>
 
       <div id="container-3">
-        <h1>Våra priser</h1>
+        <h1 id="priser">Våra priser</h1>
 
         <div id="container-3-boxes-tvatt">
           <div class="container-3-box" id="container-3-box1" data-aos="fade-up">
@@ -327,13 +340,18 @@
       </div>
       <h1 id="dackskift">Däckskifte</h1>
       <div id="container-3-boxes-dack">
-        <div></div>
+        <video autoplay muted loop class="myVideo">
+          <source src="./img/wheel.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      
+        <div class="overlay"></div>
 
-        <div class="container-3-box" id="color" data-aos="fade-up">
-          <h2>Däckskifte - fr. 249 kr</h2>
-
+        <div class="container-2-box" id="color" data-aos="fade-up">
           <img src="./img/dackskift.webp" id="dack" alt="tvatt" />
 
+          <div class="container-2-box-text">
+          <h2>Däckskifte - fr. 249 kr</h2>
           <p>
             Vi erbjuder snabbt och smidigt däckskifte för 499 kr, så att du
             enkelt kan byta mellan sommar- och vinterdäck.
@@ -343,9 +361,9 @@
             >, vilket ger dig ett riktigt bra erbjudande och både rena däck och
             en fräsch bil!
           </p>
+          </div>
         </div>
 
-        <div></div>
       </div>
     </main>
 

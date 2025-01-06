@@ -4,21 +4,26 @@
     overflow-x: hidden;
   }
 
-  /* Justera header */
 
+  
+     /* Justera header */
   .header-hidden h1 {
     display: none;
+    z-index: 10;
   }
 
   #header-container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
+    z-index: 10;
+    height: auto;
   }
 
   /* Döljer länkarna från början och visar hamburgermenyn */
   #header-container a {
     display: none;
+    z-index: 10;
   }
 
   /* Visa hamburgermenyn */
@@ -26,12 +31,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
   }
 
   /* Justerar huvudrubriken */
   #header-container h1 {
     text-align: center;
     width: 100%;
+    z-index: 10;
   }
 
   /* Anpassa navigationslänkar när hamburgermenyn öppnas */
@@ -41,7 +48,36 @@
     padding: 15px;
     text-align: center;
     border: none;
+    z-index: 10;
   }
+
+  /* Background for the menu when it's open */
+  #header-container.show {
+    background-color: #3b8df1; /* Bluish background color */
+    width: 100%;
+    height: 25%; /* Set height to a quarter of the screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+
+  /* Adjust the links when the menu is open */
+  #header-container.show a {
+    display: block;
+    width: 75%;
+    padding: 15px;
+    text-align: center;
+    border: none;
+    background-color: black; /* Match background color */
+    color: white; /* Make text color white for visibility */
+  }
+
+  /* Optional: Add hover effect to links */
+ 
+
+  
 
   /* Justering av huvudinnehåll (main) */
   main {
@@ -50,12 +86,23 @@
 
   /* Container-1 styling */
   #container-1 {
-    width: 80vw;
+    width: 100vw;
   }
 
   #container-1 img {
     width: 150px;
     height: 150px;
+  }
+
+  #text{
+    width: 80%;
+  }
+
+  #text h1{
+    text-align: center;
+    letter-spacing: 18px;
+    font-size: 2.5rem;
+    color: rgb(172, 172, 172);
   }
 
   /* Container-2 i kolumner */
@@ -111,13 +158,21 @@
   .container-3-box {
     width: 90%;
     height: auto;
-    gap: 35px;
-    background: #3b8df1;
+    max-height: 110vh;
+    gap: 10px;
+    transition: max-height 0.5s ease; /* Smooth transition for height */
+
+  background: rgba(255, 255, 255, 0.467);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(3.6px);
+  -webkit-backdrop-filter: blur(3.6px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   }
 
   .container-3-box img {
-    width: 60%;
-    height: auto;
+    width: 160px;
+    height: 120px;
   }
 
   #container-3-boxes-tvatt {
@@ -125,11 +180,13 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    background-image: url(../img/exteriorTvatt.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
   }
 
-  #color {
-    background-color: #6eabda70;
-  }
+ 
 
   /* Anpassa bilderna i helrekonden */
   #images {
@@ -140,8 +197,8 @@
   }
 
   #images img {
-    width: 45%; /* Sätt en maxbredd så att de passar på skärmen */
-    height: auto; /* Bevara bildförhållandet */
+    width: 135px;
+    height: 120px;
   }
 
   /* Footer justering */
@@ -150,4 +207,5 @@
     align-items: center;
     gap: 20px;
   }
+
 }
