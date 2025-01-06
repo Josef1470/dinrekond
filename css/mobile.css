@@ -13,11 +13,12 @@
   }
 
   #header-container {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     gap: 10px;
     z-index: 10;
-    height: auto;
+    height: 15vh;
   }
 
   /* Döljer länkarna från början och visar hamburgermenyn */
@@ -101,7 +102,7 @@
   #text h1{
     text-align: center;
     letter-spacing: 18px;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     color: rgb(172, 172, 172);
   }
 
